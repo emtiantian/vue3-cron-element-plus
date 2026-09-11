@@ -4,6 +4,8 @@
 
 [Live demo](https://emtiantian.github.io/vue3-cron-element-plus/)
 
+![Cron editor preview](docs/preview.png)
+
 An Element Plus cron editor for Vue 3 projects that need configurable fields and editing modes.
 
 ## Features
