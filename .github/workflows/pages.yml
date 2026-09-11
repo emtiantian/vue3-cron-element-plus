@@ -3,6 +3,12 @@ name: Deploy playground to GitHub Pages
 on:
   push:
     branches: [master, main]
+    paths:
+      - 'src/**'
+      - 'playground/**'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
+      - '.github/workflows/pages.yml'
   workflow_dispatch:
 
 permissions:

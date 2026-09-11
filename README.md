@@ -2,6 +2,8 @@
 
 [简体中文](README.zh-CN.md)
 
+[Live demo](https://emtiantian.github.io/vue3-cron-element-plus/)
+
 An Element Plus cron editor for Vue 3 projects that need configurable fields and editing modes.
 
 ## Features
@@ -14,7 +16,7 @@ An Element Plus cron editor for Vue 3 projects that need configurable fields and
 
 ## Quick start
 
-Version 0.1.0 is being prepared. The registry install command becomes available after publication.
+Version 0.1.0 is being prepared. The registry install command becomes available after publication. The live demo is available at the link above.
 
 ```sh
 pnpm add @emtt/vue3-cron-element-plus vue element-plus
