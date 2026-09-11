@@ -1,0 +1,62 @@
+{
+  "name": "@emtt/vue3-cron-element-plus",
+  "version": "0.1.0",
+  "description": "Configurable Vue 3 cron editor with Element Plus",
+  "type": "module",
+  "license": "MIT",
+  "author": "hao503106@163.com",
+  "files": [
+    "dist",
+    "README.zh-CN.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "types": "./dist/index.d.ts",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "dev": "vite playground",
+    "build": "vite build && vue-tsc -p tsconfig.build.json",
+    "build:demo": "vite build --config playground/vite.config.ts",
+    "typecheck": "vue-tsc --noEmit",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "peerDependencies": {
+    "element-plus": "^2.10.0",
+    "vue": "^3.5.0"
+  },
+  "dependencies": {
+    "cron-parser": "^5.4.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@vitejs/plugin-vue": "^5.2.0",
+    "@vue/test-utils": "^2.4.6",
+    "element-plus": "^2.10.0",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-vue": "^10.0.0",
+    "jsdom": "^26.1.0",
+    "prettier": "^3.5.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.0.0",
+    "vite": "^6.3.0",
+    "vitest": "^3.2.0",
+    "vue": "^3.5.0",
+    "vue-tsc": "^2.2.0"
+  },
+  "packageManager": "pnpm@10.7.1"
+}

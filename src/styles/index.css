@@ -1,0 +1,209 @@
+.emtt-cron {
+  --cron-padding: 24px;
+  --cron-radius: 12px;
+  --cron-label-width: 72px;
+  color: var(--el-text-color-primary, #303133);
+  background: var(--el-bg-color, #fff);
+  border: 1px solid var(--el-border-color-light, #e4e7ed);
+  border-radius: var(--cron-radius);
+  padding: var(--cron-padding);
+  max-width: 760px;
+  width: 100%;
+  box-sizing: border-box;
+  font:
+    14px/1.5 system-ui,
+    sans-serif;
+}
+.emtt-cron *,
+.emtt-cron *::before,
+.emtt-cron *::after {
+  box-sizing: border-box;
+}
+.emtt-cron .el-tabs--card > .el-tabs__header {
+  border-bottom: 0;
+  margin: 0 0 20px;
+}
+.emtt-cron .el-tabs--card > .el-tabs__header .el-tabs__nav {
+  border: 0;
+  background: var(--el-fill-color-light, #f5f7fa);
+  border-radius: 8px;
+  padding: 4px;
+}
+.emtt-cron .el-tabs--card > .el-tabs__header .el-tabs__item {
+  border: 0;
+  height: 34px;
+  padding: 0 20px;
+  border-radius: 6px;
+  color: var(--el-text-color-regular, #606266);
+  font-weight: 500;
+}
+.emtt-cron .el-tabs--card > .el-tabs__header .el-tabs__item.is-active {
+  background: var(--el-bg-color, #fff);
+  color: var(--el-color-primary, #409eff);
+  box-shadow: 0 1px 4px #0000000d;
+}
+.emtt-cron .el-tabs__item:focus-visible {
+  outline: 2px solid var(--el-color-primary, #409eff);
+  outline-offset: -2px;
+}
+.emtt-cron__editor {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 20px;
+}
+.emtt-cron__editor > p {
+  margin: 0 0 8px;
+  color: var(--el-text-color-secondary, #909399);
+  font-size: 12px;
+}
+.emtt-cron__row {
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  min-width: 0;
+}
+.emtt-cron__row > .el-checkbox {
+  height: 24px;
+  margin-right: 0;
+}
+.emtt-cron__row > .el-checkbox .el-checkbox__label {
+  font-weight: 500;
+  padding-left: 8px;
+}
+.emtt-cron__inputs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+  background: var(--el-fill-color-lighter, #fafafa);
+}
+.emtt-cron__inputs[data-active='true'] {
+  background: var(--el-color-primary-light-9, #ecf5ff);
+  border-color: var(--el-color-primary-light-7, #c6e2ff);
+}
+.emtt-cron__title {
+  display: inline-block;
+  margin-left: 22px;
+  width: var(--cron-label-width);
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.emtt-cron__inputs label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--el-text-color-regular, #606266);
+  font-size: 13px;
+}
+.emtt-cron__inputs .el-input-number {
+  width: 112px;
+}
+.emtt-cron__specific {
+  padding-top: 6px;
+}
+.emtt-cron__values {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
+  gap: 4px;
+  margin: 8px 0 0 22px;
+}
+.emtt-cron__values .el-checkbox {
+  margin: 0;
+  height: 32px;
+  padding: 0 4px;
+  border-radius: 4px;
+}
+.emtt-cron__values .el-checkbox:hover {
+  background: var(--el-fill-color-light, #f5f7fa);
+}
+.emtt-cron__values .el-checkbox__label {
+  padding-left: 6px;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+.emtt-cron__expression {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  padding: 16px;
+  border-top: 1px solid var(--el-border-color-lighter, #ebeef5);
+  background: var(--el-fill-color-lighter, #fafafa);
+  border-radius: 8px;
+}
+.emtt-cron__expression > span {
+  color: var(--el-text-color-secondary, #909399);
+  font-size: 12px;
+}
+.emtt-cron code {
+  overflow-wrap: anywhere;
+  font:
+    500 16px/1.6 ui-monospace,
+    SFMono-Regular,
+    Consolas,
+    monospace;
+  letter-spacing: 1px;
+}
+.emtt-cron__error {
+  margin: 12px 0 0;
+  padding: 10px 12px;
+  border-radius: 6px;
+  background: var(--el-color-danger-light-9, #fef0f0);
+  color: var(--el-color-danger, #f56c6c);
+  font-size: 13px;
+}
+.emtt-cron__preview {
+  margin-top: 20px;
+}
+.emtt-cron__preview strong {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--el-text-color-secondary, #909399);
+}
+.emtt-cron__preview ol {
+  padding-left: 22px;
+  margin: 8px 0 0;
+  display: grid;
+  gap: 6px;
+}
+.emtt-cron__preview li::marker {
+  color: var(--el-text-color-placeholder, #a8abb2);
+  font-size: 12px;
+}
+.emtt-cron__preview time {
+  font:
+    13px/1.7 ui-monospace,
+    SFMono-Regular,
+    Consolas,
+    monospace;
+  color: var(--el-text-color-regular, #606266);
+}
+@media (max-width: 560px) {
+  .emtt-cron {
+    padding: 14px;
+  }
+  .emtt-cron .el-tabs--card > .el-tabs__header .el-tabs__item {
+    padding: 0 14px;
+  }
+  .emtt-cron__inputs {
+    gap: 10px;
+  }
+  .emtt-cron__inputs .emtt-cron__title {
+    width: calc(100% - 22px);
+  }
+  .emtt-cron__inputs label {
+    margin-left: 22px;
+  }
+  .emtt-cron__values {
+    grid-template-columns: repeat(auto-fill, minmax(44px, 1fr));
+  }
+}
+
+.emtt-cron__specific-heading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
