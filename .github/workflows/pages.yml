@@ -1,11 +1,11 @@
-name: Deploy playground to GitHub Pages
+name: Deploy site to GitHub Pages
 
 on:
   push:
     branches: [master, main]
     paths:
       - 'src/**'
-      - 'playground/**'
+      - 'site/**'
       - 'package.json'
       - 'pnpm-lock.yaml'
       - '.github/workflows/pages.yml'
@@ -33,11 +33,11 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm build:demo
+      - run: pnpm build:pages
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: playground/dist
+          path: site/dist
 
   deploy:
     needs: build
