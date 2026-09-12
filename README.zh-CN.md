@@ -4,7 +4,7 @@
 
 [在线演示](https://emtiantian.github.io/vue3-cron-element-plus/)
 
-![Cron editor preview](https://raw.githubusercontent.com/emtiantian/vue3-cron-element-plus/main/docs/preview.png)
+![Cron editor preview](https://raw.githubusercontent.com/emtiantian/vue3-cron-element-plus/master/docs/preview.png)
 
 一个适用于 Vue 3 的 Cron 表达式编辑器，基于 Element Plus 构建。它支持秒级调度，也允许你按项目需要决定显示哪些时间字段、开放哪些编辑方式。
 
