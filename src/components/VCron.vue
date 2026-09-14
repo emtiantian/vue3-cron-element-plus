@@ -1,12 +1,8 @@
 <script setup lang="ts">
-import '../styles/index.css'
 import { computed, ref, watch } from 'vue'
 import { ElTabs, ElTabPane } from 'element-plus/es/components/tabs/index'
 import { ElInputNumber } from 'element-plus/es/components/input-number/index'
 import { ElCheckboxGroup, ElCheckbox } from 'element-plus/es/components/checkbox/index'
-import 'element-plus/es/components/tabs/style/css'
-import 'element-plus/es/components/input-number/style/css'
-import 'element-plus/es/components/checkbox/style/css'
 import type { CronProps, CronState, CronField, CronMode, CronIssue, CronEmits } from '../types'
 import {
   bounds,

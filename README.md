@@ -37,7 +37,7 @@ const expression = ref('0 * * * * *')
 </template>
 ```
 
-No global Element Plus registration is needed. Required Element Plus styles are imported by the component; the CSS import above supplies this editor's layout.
+No global Element Plus registration is needed. Import `@emtt/vue3-cron-element-plus/style.css` once in your application entry. It includes the required Element Plus styles and this editor's layout. The JavaScript entry does not automatically import CSS.
 
 ## Configuration example
 

@@ -1,0 +1,6 @@
+import 'element-plus/theme-chalk/base.css'
+import 'element-plus/theme-chalk/el-tabs.css'
+import 'element-plus/theme-chalk/el-input.css'
+import 'element-plus/theme-chalk/el-input-number.css'
+import 'element-plus/theme-chalk/el-checkbox.css'
+import './styles/index.css'

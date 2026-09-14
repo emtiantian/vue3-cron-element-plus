@@ -25,7 +25,7 @@
 pnpm add @emtt/vue3-cron-element-plus vue element-plus
 ```
 
-组件会按需使用 Element Plus 的控件和样式；同时引入本组件样式：
+组件按需使用 Element Plus 控件，无需全局注册 Element Plus。在应用入口统一引入一次 `@emtt/vue3-cron-element-plus/style.css`，其中包含所需的 Element Plus 样式和编辑器布局样式。JavaScript 入口不会自动导入 CSS：
 
 ```vue
 <script setup lang="ts">
