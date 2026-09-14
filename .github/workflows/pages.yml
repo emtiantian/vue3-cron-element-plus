@@ -7,6 +7,8 @@ on:
       - 'src/**'
       - 'site/**'
       - 'package.json'
+      - 'site/package.json'
+      - 'scripts/**'
       - 'pnpm-lock.yaml'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
@@ -33,7 +35,7 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm build:pages
+      - run: pnpm build:site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

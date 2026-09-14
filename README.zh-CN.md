@@ -111,11 +111,8 @@ pnpm dev
 运行测试和构建：
 
 ```sh
-pnpm typecheck
-pnpm lint
-pnpm test
-pnpm build
-pnpm build:demo
+pnpm test:dev
+pnpm pack
 ```
 
 ## 项目信息

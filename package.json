@@ -7,6 +7,7 @@
   "author": "hao503106@163.com",
   "files": [
     "dist",
+    "README.md",
     "README.zh-CN.md"
   ],
   "exports": {
@@ -27,14 +28,11 @@
   },
   "scripts": {
     "dev": "vite playground",
-    "build": "vite build && vue-tsc -p tsconfig.build.json",
-    "build:demo": "vite build --config playground/vite.config.ts",
-    "typecheck": "vue-tsc --noEmit",
-    "test": "vitest run",
-    "lint": "eslint .",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "build:pages": "vite build --config site/vite.config.ts"
+    "pack": "vite build && vue-tsc -p tsconfig.build.json && pnpm pack",
+    "publish:npm": "pnpm publish --access public --registry=https://registry.npmjs.org/",
+    "test:dev": "vitest run",
+    "quality": "eslint src tests playground site/App.vue site/main.ts site/vite.config.ts scripts && prettier --check src tests playground site/App.vue site/main.ts site/vite.config.ts scripts package.json",
+    "build:site": "vite build --config site/vite.config.ts"
   },
   "peerDependencies": {
     "element-plus": "^2.10.0",

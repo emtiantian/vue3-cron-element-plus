@@ -93,7 +93,7 @@ This component does not execute jobs. Previews use cron-parser and the host time
 
 ## Development and demo
 
-Run `pnpm install` then `pnpm dev`. The playground covers formats, language, two-layer configuration, and external v-model updates. The online GitHub Pages demo is not deployed yet.
+Run `pnpm install` then `pnpm dev`. The playground covers formats, language, two-layer configuration, and external v-model updates. The online GitHub Pages demo is available at the link above.
 
 Customize `--cron-padding`, `--cron-radius`, and Element Plus CSS variables.
 

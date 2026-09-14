@@ -1,5 +1,7 @@
 node_modules
 dist
 *.tgz
+.site-package.tgz
+site/pnpm-lock.yaml
 .DS_Store
 .vscode/
