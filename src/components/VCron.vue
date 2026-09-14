@@ -74,7 +74,7 @@ function commit(f: CronField) {
   if (props.disabled || issue.value) return
   editIssue.value = undefined
   try {
-    // Keep all untouched tokens verbatim, including hidden fields.
+    // 保留所有未修改的字段内容，包括隐藏字段。
     const keys = fieldsFor(props.format),
       parts = value.value.trim().split(/\s+/)
     parts[keys.indexOf(f)] = serializeField(state.value[f]!)

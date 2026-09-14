@@ -1,6 +1,6 @@
-# Contributing
+# 贡献指南
 
-Use Node.js 22 and pnpm 10.7.1.
+请使用 Node.js 22 和 pnpm 10.7.1。
 
 ```sh
 pnpm install --frozen-lockfile
@@ -8,4 +8,4 @@ pnpm test:dev
 pnpm pack
 ```
 
-Add behavioral tests for changes. Keep both README translations current. See docs/decisions.md for scope and docs/release.md for manual release steps. No automated npm publication is configured.
+代码变更应补充必要的行为测试，并同步维护中英文 README。npm 发布不会由 GitHub Actions 自动执行，请按照项目中的手动发布流程操作。

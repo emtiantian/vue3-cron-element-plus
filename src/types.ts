@@ -16,7 +16,7 @@ export interface CronIssue {
   code: CronErrorCode
   field?: CronField
 }
-/** Events emitted by VCron. */
+/** VCron 发出的事件。 */
 export interface CronEmits {
   'update:modelValue': [value: string]
   change: [value: string]
@@ -45,8 +45,8 @@ export interface CronProps {
     modes?: Partial<CronMessages['modes']>
     errors?: Partial<CronMessages['errors']>
   }
-  /** IANA timezone used for next-run previews; defaults to the browser timezone. */
+  /** 用于预览下次执行时间的 IANA 时区；默认为浏览器时区。 */
   timeZone?: string
-  /** Number of next-run times to display. Set to 0 to hide the preview. */
+  /** 显示的下次执行时间数量；设为 0 可隐藏预览。 */
   previewCount?: number
 }

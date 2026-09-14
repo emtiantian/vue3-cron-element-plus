@@ -9,7 +9,7 @@ const format = ref<CronFormat>('unix-seconds'),
 </script>
 <template>
   <main>
-    <small>@emtt / VUE COMPONENTS</small>
+    <small>@emtt / Vue 组件</small>
     <h1>Cron 表达式编辑器</h1>
     <p>选择时间规则，预览执行计划。支持按需配置字段与编辑选项。</p>
     <div class="controls">
